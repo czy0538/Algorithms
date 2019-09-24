@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/1基础.iml" filepath="$PROJECT_DIR$/1基础.iml" />
       <module fileurl="file://$PROJECT_DIR$/Dijkstra双栈算术表达式求值/Dijkstra双栈算术表达式求值.iml" filepath="$PROJECT_DIR$/Dijkstra双栈算术表达式求值/Dijkstra双栈算术表达式求值.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LIFO栈/LIFO栈.iml" filepath="$PROJECT_DIR$/LIFO栈/LIFO栈.iml" />
     </modules>
   </component>
 </project>
