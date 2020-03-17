@@ -38,6 +38,7 @@ public:
                 return mid;
             }
 
+
             mid = left + ((right - left) >> 1);//>>的级别比+低
 
         }

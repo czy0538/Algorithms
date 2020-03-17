@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Evaluate",
+            "request": "launch",
+            "mainClass": "Evaluate",
+            "projectName": "Dijkstra双栈算术表达式求值_ba7d4319"
+        }
+    ]
+}
