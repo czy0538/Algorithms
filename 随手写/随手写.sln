@@ -9,6 +9,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "名单统计", "名单统�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "阶乘", "阶乘\阶乘.vcxproj", "{CB07EB5D-3FA0-4719-A1E3-3AB881D1D7A3}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "大数乘法", "大数乘法\大数乘法.vcxproj", "{F258BABD-A64F-4A2C-91C0-2FA2A2B6836F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "线性方程组求解直接法", "线性方程组求解直接法\线性方程组求解直接法.vcxproj", "{AACC8920-C701-4B9E-8050-95B5A06E593B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -41,6 +45,22 @@ Global
 		{CB07EB5D-3FA0-4719-A1E3-3AB881D1D7A3}.Release|x64.Build.0 = Release|x64
 		{CB07EB5D-3FA0-4719-A1E3-3AB881D1D7A3}.Release|x86.ActiveCfg = Release|Win32
 		{CB07EB5D-3FA0-4719-A1E3-3AB881D1D7A3}.Release|x86.Build.0 = Release|Win32
+		{F258BABD-A64F-4A2C-91C0-2FA2A2B6836F}.Debug|x64.ActiveCfg = Debug|x64
+		{F258BABD-A64F-4A2C-91C0-2FA2A2B6836F}.Debug|x64.Build.0 = Debug|x64
+		{F258BABD-A64F-4A2C-91C0-2FA2A2B6836F}.Debug|x86.ActiveCfg = Debug|Win32
+		{F258BABD-A64F-4A2C-91C0-2FA2A2B6836F}.Debug|x86.Build.0 = Debug|Win32
+		{F258BABD-A64F-4A2C-91C0-2FA2A2B6836F}.Release|x64.ActiveCfg = Release|x64
+		{F258BABD-A64F-4A2C-91C0-2FA2A2B6836F}.Release|x64.Build.0 = Release|x64
+		{F258BABD-A64F-4A2C-91C0-2FA2A2B6836F}.Release|x86.ActiveCfg = Release|Win32
+		{F258BABD-A64F-4A2C-91C0-2FA2A2B6836F}.Release|x86.Build.0 = Release|Win32
+		{AACC8920-C701-4B9E-8050-95B5A06E593B}.Debug|x64.ActiveCfg = Debug|x64
+		{AACC8920-C701-4B9E-8050-95B5A06E593B}.Debug|x64.Build.0 = Debug|x64
+		{AACC8920-C701-4B9E-8050-95B5A06E593B}.Debug|x86.ActiveCfg = Debug|Win32
+		{AACC8920-C701-4B9E-8050-95B5A06E593B}.Debug|x86.Build.0 = Debug|Win32
+		{AACC8920-C701-4B9E-8050-95B5A06E593B}.Release|x64.ActiveCfg = Release|x64
+		{AACC8920-C701-4B9E-8050-95B5A06E593B}.Release|x64.Build.0 = Release|x64
+		{AACC8920-C701-4B9E-8050-95B5A06E593B}.Release|x86.ActiveCfg = Release|Win32
+		{AACC8920-C701-4B9E-8050-95B5A06E593B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
