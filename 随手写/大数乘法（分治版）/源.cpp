@@ -1,19 +1,18 @@
-#include<iostream>
-#include<string>
-#include<algorithm>
-#include<sstream>
+#include <iostream>
+#include <string>
+#include <algorithm>
+#include <sstream>
 using namespace std;
-//string转换为int
 
-int strint(const string& s)
+int strint(const string &s)
 {
 	int num;
 	stringstream ss(s);
 	ss >> num;
 	return num;
 }
-//int转换为string
-string intstr(const int& num)
+
+string intstr(const int &num)
 {
 	string s;
 	stringstream ss;
@@ -24,7 +23,7 @@ string intstr(const int& num)
 
 //前置0 ，因为大数的长度必须要为2^n的倍数，才能划分
 
-void removePrezero(string& s)
+void removePrezero(string &s)
 {
 	if (s.length() == 1)
 		return;
@@ -33,11 +32,12 @@ void removePrezero(string& s)
 	{
 		if (s[i] == '0')
 			k++;
-		else break;
+		else
+			break;
 	}
 	if (k == s.length())
 		s = "0";
-	else 
+	else
 		s = s.substr(k);
 	return;
 }
@@ -45,7 +45,7 @@ void removePrezero(string& s)
 string add(string s1, string s2)
 {
 	string s = "";
-	removePrezero(s1);	//去掉前置0
+	removePrezero(s1); //去掉前置0
 	removePrezero(s2);
 	reverse(s1.begin(), s1.end()); //先把字符串颠倒，方便相加
 	reverse(s2.begin(), s2.end());
@@ -53,8 +53,10 @@ string add(string s1, string s2)
 	for (int i = 0; c || i < max(s1.length(), s2.length()); i++)
 	{
 		int t = c;
-		if (i < s1.length())t += s1[i] - '0';
-		if (i < s2.length())t += s2[i] - '0';
+		if (i < s1.length())
+			t += s1[i] - '0';
+		if (i < s2.length())
+			t += s2[i] - '0';
 		int d = t % 10;
 		s.insert(0, intstr(d));
 		c = t / 10;
@@ -62,17 +64,19 @@ string add(string s1, string s2)
 	return s;
 }
 //大数相减
-string subtra(string& s1, string& s2)
+string subtra(string &s1, string &s2)
 {
 	string s = "";
 	string flag;
-	removePrezero(s1);	//去掉前置0
+	removePrezero(s1); //去掉前置0
 	removePrezero(s2);
 	int len1 = s1.length();
 	int len2 = s2.length();
 	int len = len1 > len2 ? len1 : len2;
-	if (len1 < len2)flag = "-";
-	else if (len1 > len2)flag = "+";
+	if (len1 < len2)
+		flag = "-";
+	else if (len1 > len2)
+		flag = "+";
 	else
 	{
 		int i;
@@ -80,50 +84,58 @@ string subtra(string& s1, string& s2)
 		{
 			if (s1.at(i) > s2.at(i))
 			{
-				flag = "+";	 break;
+				flag = "+";
+				break;
 			}
 			else if (s1.at(i) < s2.at(i))
 			{
-				flag = "-"; break;
+				flag = "-";
+				break;
 			}
 		}
-		if (i == len1)s == "0";
+		if (i == len1)
+			s == "0";
 	}
-	int* num = (int*)malloc(sizeof(int) * len);
-	reverse(s1.begin(), s1.end());	//方便相减
+	int *num = (int *)malloc(sizeof(int) * len);
+	reverse(s1.begin(), s1.end()); //方便相减
 	reverse(s2.begin(), s2.end());
 	int c = 0;
 	for (int j = 0; j < len; j++)
 	{
 		int n1 = j < len1 ? s1[j] - '0' : 0;
 		int n2 = j < len2 ? s2[j] - '0' : 0;
-		if (flag == "+")num[c++] = n1 - n2;
-		else num[c++] = n2 - n1;
+		if (flag == "+")
+			num[c++] = n1 - n2;
+		else
+			num[c++] = n2 - n1;
 	}
 	for (int j = 0; j < c; j++)
 	{
 		if (num[j] < 0)
 		{
-			num[j] += 10; num[j + 1] -= 1;
+			num[j] += 10;
+			num[j + 1] -= 1;
 		}
 	}
 	c--;
-	while (num[c] == 0)c--;
+	while (num[c] == 0)
+		c--;
 	for (int j = 0; j <= c; j++)
 	{
 		s.insert(0, intstr(num[j]));
 	}
-	if (flag == "-")return flag + s;
-	else return s;
+	if (flag == "-")
+		return flag + s;
+	else
+		return s;
 }
 //增加前置0
-void addPrezero(string& s, int L)
+void addPrezero(string &s, int L)
 {
 	for (int i = 0; i < L; i++)
 	{
 		s = s.insert(0, "0");
 	}
-		
 }
 //增加后置0，大数*10^n	相当于在数的后面加n个0
 string addLastzero(string s, int L)
@@ -134,41 +146,50 @@ string addLastzero(string s, int L)
 	return s1;
 }
 //大数相乘
-string multi(string& s1, string& s2)
+string multi(string &s1, string &s2)
 {
 	bool flag1 = false, flag2 = false;
-	string sign;	 //作用是判断结果是正数还是负数
+	string sign; //作用是判断结果是正数还是负数
 	if (s1.at(0) == '-')
 	{
-		flag1 = true; s1 = s1.substr(1);
+		flag1 = true;
+		s1 = s1.substr(1);
 	}
-	if (s1.at(0) == '-')
+	if (s2.at(0) == '-')
 	{
-		flag2 = true; s2 = s2.substr(1);
+		flag2 = true;
+		s2 = s2.substr(1);
 	}
-	if (flag1 && flag2)sign = "+";
-	else if (flag1 || flag2) sign = "-";
-	else sign = "+";
-	int L = 4;	 //将数前置若干个0，使其长度为2^n的倍数
+	if (flag1 && flag2)
+		sign = "+";
+	else if (flag1 || flag2)
+		sign = "-";
+	else
+		sign = "+";
+	int L = 4; //将数前置若干个0，使其长度为2^n的倍数
 	if (s1.length() > 2 || s2.length() > 2)
 	{
 		if (s1.length() >= s2.length())
 		{
-			while (L < s1.length())L *= 2;
+			while (L < s1.length())
+				L *= 2;
 			if (L != s1.length())
 				addPrezero(s1, L - s1.length());
 			addPrezero(s2, L - s2.length());
 		}
 		else
 		{
-			while (L < s2.length())L *= 2;
+			while (L < s2.length())
+				L *= 2;
 			if (L != s2.length())
 				addPrezero(s2, L - s2.length());
 			addPrezero(s1, L - s1.length());
 		}
 	}
-	if (s1.length() == 1)addPrezero(s1, 1);
-	if (s2.length() == 1)addPrezero(s2, 1);
+	if (s1.length() == 1)
+		addPrezero(s1, 1);
+	if (s2.length() == 1)
+		addPrezero(s2, 1);
 
 	int n = s1.length();
 	string result, a0, a1, b0, b1;
@@ -201,12 +222,13 @@ string multi(string& s1, string& s2)
 		string s2 = addLastzero(c2, n);
 		result = add(add(s1, s2), c0);
 	}
-	if (sign == "-")result.insert(0, sign);
+	if (sign == "-")
+		result.insert(0, sign);
 	return result;
 }
 int main()
 {
-	//text
+
 	string s1 = "579521", s2 = "12348976543";
 	cout << multi(s1, s2);
 }

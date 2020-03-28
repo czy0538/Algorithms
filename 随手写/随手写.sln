@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "线性方程组求解直接
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "大数乘法（分治版）", "大数乘法（分治版）\大数乘法（分治版）.vcxproj", "{03A03380-26CE-4D0F-A246-88BD0E4DD0BF}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Strassen方程", "Strassen方程\Strassen方程.vcxproj", "{830EC779-030A-4D8F-B0C3-60BFEE8B6D02}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -71,6 +73,14 @@ Global
 		{03A03380-26CE-4D0F-A246-88BD0E4DD0BF}.Release|x64.Build.0 = Release|x64
 		{03A03380-26CE-4D0F-A246-88BD0E4DD0BF}.Release|x86.ActiveCfg = Release|Win32
 		{03A03380-26CE-4D0F-A246-88BD0E4DD0BF}.Release|x86.Build.0 = Release|Win32
+		{830EC779-030A-4D8F-B0C3-60BFEE8B6D02}.Debug|x64.ActiveCfg = Debug|x64
+		{830EC779-030A-4D8F-B0C3-60BFEE8B6D02}.Debug|x64.Build.0 = Debug|x64
+		{830EC779-030A-4D8F-B0C3-60BFEE8B6D02}.Debug|x86.ActiveCfg = Debug|Win32
+		{830EC779-030A-4D8F-B0C3-60BFEE8B6D02}.Debug|x86.Build.0 = Debug|Win32
+		{830EC779-030A-4D8F-B0C3-60BFEE8B6D02}.Release|x64.ActiveCfg = Release|x64
+		{830EC779-030A-4D8F-B0C3-60BFEE8B6D02}.Release|x64.Build.0 = Release|x64
+		{830EC779-030A-4D8F-B0C3-60BFEE8B6D02}.Release|x86.ActiveCfg = Release|Win32
+		{830EC779-030A-4D8F-B0C3-60BFEE8B6D02}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
