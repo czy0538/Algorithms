@@ -1,10 +1,10 @@
 #include "Chip.h"
 #include<random>
 
-bool test(Chip chip)
+bool Chip::test(Chip chip)
 {
-	if (chip.tag)
-		return true;
+	if (this->tag)
+		return chip.tag;
 	else
 	{
 		//伯努利分布，模拟坏芯片随机给出芯片的好坏
