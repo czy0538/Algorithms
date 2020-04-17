@@ -2,7 +2,10 @@
 #include"Chip.h"
 #include<vector>
 #include<random>
+#include<chrono>
 using namespace std;
+using Time = chrono::system_clock::time_point;
+using microseconds = chrono::microseconds;
 //芯片产生
 void createData(vector<Chip>& chips, size_t n);
 //蛮力法
@@ -12,10 +15,12 @@ bool isOdd(size_t n);
 //分治算法
 Chip Divide_Conquer(vector<Chip> chips);
 void DC(vector<Chip>& chips);
+//时间测试结果
+void timeMeasure(Time start,Time end );
 int main()
 {
 	vector<Chip> chips;
-	createData(chips, 1000);
+	createData(chips, 123456789);
 	Chip c(true);
 	//验证数据集的正确性
 	/*cout << chips.size() << endl;
@@ -25,14 +30,20 @@ int main()
 			cout << "true" << endl;
 		else cout << "false" << endl;
 	}*/
+	auto start = chrono::system_clock::now();
 	forceMethod(chips);
+	auto end = chrono::system_clock::now();
+	timeMeasure(start, end);
+	start = chrono::system_clock::now();
 	DC(chips);
+	end = chrono::system_clock::now();
+	timeMeasure(start, end);
 	return 0;
 }
 
 void createData(vector<Chip>& chips, size_t n)
 {
-	size_t bad = n / 3;//坏芯片
+	size_t bad = n / 4;//坏芯片
 	size_t good = n - bad + 1;//好芯片
 	size_t bad_count = 0, good_count = 0;//芯片计数
 
@@ -145,9 +156,9 @@ Chip Divide_Conquer(vector<Chip> chips)
 		}
 		if (isOdd(k))//奇数情况
 		{
-			int good_count = 0, bad_count = 0;
-			int good_door = (chips.size() - 1) / 2;
-			int bad_door = (chips.size() + 1) / 2;
+			size_t good_count = 0, bad_count = 0;
+			size_t good_door = (k - 1) / 2;
+			size_t bad_door = (k + 1) / 2;
 
 			for (size_t j = 0; j < k - 1; ++j)
 			{
@@ -207,4 +218,12 @@ void DC(vector<Chip>& chips)
 	}
 	cout << "好的芯片共" << good.size() << endl;
 	cout << "坏的芯片共" << bad.size() << endl;
+}
+
+void timeMeasure(Time start, Time end)
+{
+	auto duration = chrono::duration_cast<microseconds>(end - start);
+	cout << "花费了"
+		<< double(duration.count()) * microseconds::period::num / microseconds::period::den
+		<< "秒" << endl;
 }
