@@ -23,6 +23,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "贪心算法活动选择问
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "贪心法数列极差问题", "贪心法数列极差问题\贪心法数列极差问题.vcxproj", "{29FBC567-74DF-4818-9689-7C57EF4500BE}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "循环设计", "循环设计\循环设计.vcxproj", "{B0479FAB-E978-4EDF-BBFB-9F53B25D2E10}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -111,6 +113,14 @@ Global
 		{29FBC567-74DF-4818-9689-7C57EF4500BE}.Release|x64.Build.0 = Release|x64
 		{29FBC567-74DF-4818-9689-7C57EF4500BE}.Release|x86.ActiveCfg = Release|Win32
 		{29FBC567-74DF-4818-9689-7C57EF4500BE}.Release|x86.Build.0 = Release|Win32
+		{B0479FAB-E978-4EDF-BBFB-9F53B25D2E10}.Debug|x64.ActiveCfg = Debug|x64
+		{B0479FAB-E978-4EDF-BBFB-9F53B25D2E10}.Debug|x64.Build.0 = Debug|x64
+		{B0479FAB-E978-4EDF-BBFB-9F53B25D2E10}.Debug|x86.ActiveCfg = Debug|Win32
+		{B0479FAB-E978-4EDF-BBFB-9F53B25D2E10}.Debug|x86.Build.0 = Debug|Win32
+		{B0479FAB-E978-4EDF-BBFB-9F53B25D2E10}.Release|x64.ActiveCfg = Release|x64
+		{B0479FAB-E978-4EDF-BBFB-9F53B25D2E10}.Release|x64.Build.0 = Release|x64
+		{B0479FAB-E978-4EDF-BBFB-9F53B25D2E10}.Release|x86.ActiveCfg = Release|Win32
+		{B0479FAB-E978-4EDF-BBFB-9F53B25D2E10}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

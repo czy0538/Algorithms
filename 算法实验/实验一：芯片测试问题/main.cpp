@@ -20,7 +20,7 @@ void timeMeasure(Time start,Time end );
 int main()
 {
 	vector<Chip> chips;
-	createData(chips, 123456789);
+	createData(chips, 10086);
 	Chip c(true);
 	//验证数据集的正确性
 	/*cout << chips.size() << endl;
