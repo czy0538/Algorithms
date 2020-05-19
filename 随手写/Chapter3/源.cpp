@@ -1,16 +1,21 @@
 #include<iostream>
 #include<vector>
+#include<string>
+#include<queue>
 using namespace std;
 
 //例3-1 杨辉三角
 void fun1();
 //例3-2 内存移动问题
 void fun2();
+//
+void fun3();
 
 int main()
 {
 	//fun1();
-	fun2();
+	//fun2();
+	fun3();
 	return 0;
 }
 
@@ -95,4 +100,51 @@ void fun2()
 	vector<int> col = { 1,2,3,4,5,6,7,8,9,10 };
 	memory_move(5, col);
 	show(col);
+}
+
+//大数阶乘,有问题版本，进位问题，即当进位d>9时会出现进位错误
+void fun3()
+{
+	size_t n;
+	cin >> n;
+	string num="1";
+	for (size_t i = 1; i <= n; ++i)
+	{
+		int d = 0;
+		queue<int> up;
+		for (size_t j = 0; j <num.size(); ++j)
+		{
+			int t = num[j] - '0';
+			if (!up.empty())
+			{
+				d = up.front();
+				up.pop();
+			}
+			
+			t = t * i+d;
+			d = t/10;
+			while (d != 0)
+			{
+				int u=d % 10;
+				up.push(u);
+				d /= 10;
+
+			}
+			t %= 10;
+			num[j] = t + '0';
+		}
+		
+		if (!up.empty())
+		{
+			d = up.front();
+			up.pop();
+			num.push_back(d + '0');
+		}
+	}
+	cout << num << endl;
+	for (auto i = num.cend() - 1; i != num.cbegin(); --i)
+	{
+		cout << *i;
+	}
+	cout << num[0] << endl;
 }
