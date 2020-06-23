@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29911.84
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "实验一：芯片测试问题", "实验一：芯片测试问题\实验一：芯片测试问题.vcxproj", "{48D214B8-3E2E-4D3C-B5CE-428B4BBFE6B2}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "实验二：最长公共子序列", "实验二：最长公共子序列\实验二：最长公共子序列.vcxproj", "{09BADA49-5441-451D-B2B7-992D922DBD4E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{48D214B8-3E2E-4D3C-B5CE-428B4BBFE6B2}.Release|x64.Build.0 = Release|x64
 		{48D214B8-3E2E-4D3C-B5CE-428B4BBFE6B2}.Release|x86.ActiveCfg = Release|Win32
 		{48D214B8-3E2E-4D3C-B5CE-428B4BBFE6B2}.Release|x86.Build.0 = Release|Win32
+		{09BADA49-5441-451D-B2B7-992D922DBD4E}.Debug|x64.ActiveCfg = Debug|x64
+		{09BADA49-5441-451D-B2B7-992D922DBD4E}.Debug|x64.Build.0 = Debug|x64
+		{09BADA49-5441-451D-B2B7-992D922DBD4E}.Debug|x86.ActiveCfg = Debug|Win32
+		{09BADA49-5441-451D-B2B7-992D922DBD4E}.Debug|x86.Build.0 = Debug|Win32
+		{09BADA49-5441-451D-B2B7-992D922DBD4E}.Release|x64.ActiveCfg = Release|x64
+		{09BADA49-5441-451D-B2B7-992D922DBD4E}.Release|x64.Build.0 = Release|x64
+		{09BADA49-5441-451D-B2B7-992D922DBD4E}.Release|x86.ActiveCfg = Release|Win32
+		{09BADA49-5441-451D-B2B7-992D922DBD4E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
