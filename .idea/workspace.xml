@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1d499a82-6412-400b-ae3e-c736620c52a4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="f5639f6c-eb00-4130-874a-9e68825003fa" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1基础/1基础.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1基础/Dijkstra双栈算术表达式求值/Dijkstra双栈算术表达式求值.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1基础/LIFO栈/LIFO栈.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java链表/Java链表.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/算法实验/实验二：最长公共子序列/源.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/算法实验/实验二：最长公共子序列/源.cpp" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,60 +21,38 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1QeGwlHDrJxkUzte5KTzvdmBxvh" />
+  <component name="ProjectId" id="1hi9AvLd6rThbeFpvRYY1oaq1wQ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1d499a82-6412-400b-ae3e-c736620c52a4" name="Default Changelist" comment="" />
-      <created>1568123888444</created>
+      <changelist id="f5639f6c-eb00-4130-874a-9e68825003fa" name="Default Changelist" comment="" />
+      <created>1600482909344</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1568123888444</updated>
-      <workItem from="1568123891329" duration="11000" />
-      <workItem from="1568123932746" duration="6000" />
-      <workItem from="1568123995825" duration="23000" />
-      <workItem from="1569137927878" duration="735000" />
-      <workItem from="1569138688802" duration="66000" />
+      <updated>1600482909344</updated>
+      <workItem from="1600482912480" duration="28000" />
     </task>
     <servers />
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
+  <component name="WindowStateProjectService">
+    <state x="421" y="117" key="FileChooserDialogImpl" timestamp="1600482937268">
+      <screen x="0" y="31" width="1280" height="689" />
+    </state>
+    <state x="421" y="117" key="FileChooserDialogImpl/0.31.1280.689@0.31.1280.689" timestamp="1600482937268" />
+    <state x="232" y="30" key="new project wizard" timestamp="1600482938564">
+      <screen x="0" y="31" width="1280" height="689" />
+    </state>
+    <state x="232" y="30" key="new project wizard/0.31.1280.689@0.31.1280.689" timestamp="1600482938564" />
   </component>
 </project>
