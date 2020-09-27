@@ -10,15 +10,24 @@ void SelectionSort(T);
 void Insertion(T);
 void InsertionX(T);
 void Shell(T);
+void Merge(T& a, int, int, int);
+void MergeT2D(T&, int, int);
+void MergeD2T(T&);
+int partition(T&, int, int);
+void QSort(T&, int, int);
 
 int main()
 {
-	vector<int> nums{ 1,5,3,2,6,8,4 };
+	T nums{ 1,5,3,2,6,8,4 };
 	show(nums);
 	//SelectionSort(nums);
 	//Insertion(nums);
 	//InsertionX(nums);
-	Shell(nums);
+	//Shell(nums);
+	//MergeT2D(nums, 0, nums.size() - 1);
+	//MergeD2T(nums);
+	QSort(nums, 0, nums.size() - 1);
+
 	return 0;
 }
 
@@ -36,7 +45,7 @@ void show(const T& nums)
 
 void SelectionSort(T nums)
 {
-	for (int i = 0; i < nums.size(); i++)
+	for (int i = 0; i < nums.size() - 1; i++)
 	{
 		int min = i;
 		for (int j = i + 1; j < nums.size(); j++)
@@ -100,10 +109,76 @@ void Shell(T nums)
 	{
 		for (int i = h; i < nums.size(); i++)
 		{
-			for (int j = i; j >= h && nums[j] < nums[j - h]; j -= h)
-				swap(nums[j], nums[j - h]);
+			int temp = nums[i];
+			int j = i;
+			for (; j >= h && nums[j] < nums[j - h]; j -= h)
+				nums[j] = nums[j - h];
+			nums[j] = temp;
 		}
+
 		h /= 3;
 	}
 	show(nums);
 }
+
+void Merge(T& a, int lo, int mid, int hi)
+{
+	T b = a;
+	for (int i = lo, j = mid + 1; i <= hi; ++i)
+	{
+		if (lo > mid)
+			a[i] = b[j++];
+		else if (j > hi)
+			a[i] = b[lo++];
+		else if (b[lo] < b[j])
+			a[i] = b[lo++];
+		else
+			a[i] = b[j++];
+
+	}
+	show(a);
+}
+
+void MergeT2D(T& a, int lo, int hi)
+{
+	if (lo >= hi) return;
+	int mid = lo + (hi - lo) / 2;
+	MergeT2D(a, lo, mid);
+	MergeT2D(a, mid + 1, hi);
+	Merge(a, lo, mid, hi);
+}
+
+void MergeD2T(T& a)
+{
+	for (int sz = 1; sz < a.size(); sz += sz)
+	{
+		for (int lo = 0; lo < a.size() - sz; lo += sz + sz)
+			Merge(a, lo, lo + sz - 1, min(lo + 2 * sz - 1, (int)a.size() - 1));
+	}
+}
+
+int partition(T& a, int low, int high)
+{
+	int i = low;
+	int j = high + 1;
+	while (i < j)
+	{
+		while (a[low] >= a[++i]) if (i == high) break;
+		while (a[low] <= a[--j])if (j == low) break;
+		if (i >= j) break;
+		swap(a[i], a[j]);
+	}
+	swap(a[low], a[j]);
+	show(a);
+	return j;
+}
+
+void QSort(T& a, int low, int high)
+{
+	if (low >= high)
+		return;
+	int j = partition(a, low, high);
+	QSort(a, low, j - 1);
+	QSort(a, j + 1, high);
+}
+
