@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "排序算法", "排序算法\排序算法.vcxproj", "{7F076067-FC0B-446A-A9FA-1719AE583C63}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "堆", "堆\堆.vcxproj", "{7F1A64CC-AF01-4D65-A4EA-874E9BE678BF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{7F076067-FC0B-446A-A9FA-1719AE583C63}.Release|x64.Build.0 = Release|x64
 		{7F076067-FC0B-446A-A9FA-1719AE583C63}.Release|x86.ActiveCfg = Release|Win32
 		{7F076067-FC0B-446A-A9FA-1719AE583C63}.Release|x86.Build.0 = Release|Win32
+		{7F1A64CC-AF01-4D65-A4EA-874E9BE678BF}.Debug|x64.ActiveCfg = Debug|x64
+		{7F1A64CC-AF01-4D65-A4EA-874E9BE678BF}.Debug|x64.Build.0 = Debug|x64
+		{7F1A64CC-AF01-4D65-A4EA-874E9BE678BF}.Debug|x86.ActiveCfg = Debug|Win32
+		{7F1A64CC-AF01-4D65-A4EA-874E9BE678BF}.Debug|x86.Build.0 = Debug|Win32
+		{7F1A64CC-AF01-4D65-A4EA-874E9BE678BF}.Release|x64.ActiveCfg = Release|x64
+		{7F1A64CC-AF01-4D65-A4EA-874E9BE678BF}.Release|x64.Build.0 = Release|x64
+		{7F1A64CC-AF01-4D65-A4EA-874E9BE678BF}.Release|x86.ActiveCfg = Release|Win32
+		{7F1A64CC-AF01-4D65-A4EA-874E9BE678BF}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
